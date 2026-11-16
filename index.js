@@ -77,7 +77,8 @@ function updateCity(event) {
       )}</small></div>
     </div>
 
-    <a href="/">All Cities...</a>
+  <a href="/" class="back-link">← All cities</a>
+
   `;
 }
 
