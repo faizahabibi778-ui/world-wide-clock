@@ -56,7 +56,9 @@ function updateCity(event) {
   if (!cityTimeZone) {
     return;
   }
-
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   if (cityTimeZone === "Asia/Karachi") {
     cityName = "Islamabad";
